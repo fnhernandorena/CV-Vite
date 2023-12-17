@@ -3,7 +3,6 @@ import "../../styles/pages.css";
 const Est = () => {
   return (
     <main>
-      
       <ul className="text">
         <li>
           <h3>Estudios secundarios</h3>
@@ -38,8 +37,8 @@ const Est = () => {
           </b>{" "}
           <br />
           <a href="https://github.com/fnhernandorena/CV" className="item">
-            <i className="fa-solid fa-paperclip"></i> Repositorio de la pagina web
-            del curriculum
+            <i className="fa-solid fa-paperclip"></i> Repositorio de la pagina
+            web del curriculum
           </a>{" "}
           <br />
           <ul>
@@ -125,8 +124,8 @@ const Est = () => {
               href="https://github.com/fnhernandorena/trabajo-final-desarrollo-web"
               className="item"
             >
-              <i className="fa-solid fa-paperclip"></i> Repositorio trabajo final
-              diplomatura de desarrollo web Front-End
+              <i className="fa-solid fa-paperclip"></i> Repositorio trabajo
+              final diplomatura de desarrollo web Front-End
             </a>{" "}
             <br />
             <b>Adjunto certificado:</b>

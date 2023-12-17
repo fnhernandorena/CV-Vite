@@ -38,7 +38,12 @@ const Est = () => {
           <br />
           <a href="https://github.com/fnhernandorena/CV" className="item">
             <i className="fa-solid fa-paperclip"></i> Repositorio de la pagina
-            web del curriculum
+            web del curriculum antiguo
+          </a>{" "}
+          <br />
+          <a href="https://github.com/fnhernandorena/CV-Vite" className="item">
+            <i className="fa-solid fa-paperclip"></i> Repositorio de la pagina
+            web del curriculum actual con Vite.js
           </a>{" "}
           <br />
           <ul>

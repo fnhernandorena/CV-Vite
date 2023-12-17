@@ -32,13 +32,18 @@ const Est = () => {
             Inoltre, terminato il corso mi sono dedicato completamente a
             JavaScript, generando conoscenze sempre più avanzate <br />{" "}
           </p>
-          <b>
+          <b className="tit">
             <i className="fa-brands fa-github"></i> Repository Github:
           </b>{" "}
           <br />
           <a href="https://github.com/fnhernandorena/CV" className="item">
             <i className="fa-solid fa-paperclip"></i> Repository del sito web del
-            curriculum
+            curriculum vecchio
+          </a>{" "}
+          <br />
+          <a href="https://github.com/fnhernandorena/CV" className="item">
+            <i className="fa-solid fa-paperclip"></i> Repository del sito web del
+            curriculum con Vite.js
           </a>{" "}
           <br />
           <ul>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dividir cuenta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div>
+      <h1>Dividir cuenta Online    <i class="fa-regular fa-clipboard"></i></h1>
+      <p class="textCont">
+        Quien no esta cansado de juntarse con amigos, hacer las compras por
+        separado y no saber cuanto se gastó ni cuanto se deben pagar entre si?
+        <br />
+        Con esta pagina nunca mas va a haber un problema de este tipo.
+      </p>
+      <h2><i class="fa-solid fa-person"></i>  Ingresar entre cuantas personas quieres dividir:</h2>
+      <div class="buttonsFather">
+        <input type="text   " id="inputValue" placeholder="." />
+        <button id="createButton">Aceptar</button>
+      </div>
+      <div class="buttonsFather">
+        <button id="calculateButton">Calcular</button>
+        <button id="deleteMainDiv">Cancelar</button>
+      </div>
+
+      <div id="fatherDiv"></div>
+      <h2 id="result">Resultados:</h2>
+      <div id="resultContainer"></div>
+      <script src="codigo.js"></script>
+    </div>
+  </body>
+</html>

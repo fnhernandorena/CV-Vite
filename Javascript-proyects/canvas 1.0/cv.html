@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+    <style>
+        #canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <br>
+    <label for="color">Color:</label>
+    <input type="color" id="color" value="#000000">
+    <label for="linewidth">Line Width:</label>
+    <input type="number" id="linewidth" value="2" min="1">
+    <button id="brush">Brush</button>
+    <button id="rectangle">Rectangle</button>
+    <button id="line">Straight Line</button>
+    <button id="circle">Circle</button>
+    <button id="clear">Clear Canvas</button>
+    <button id="save-button">Save Image</button>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const rect = canvas.getBoundingClientRect();
+        const ctx = canvas.getContext('2d');
+
+        let paint, color, lineWidth, difX, difY, startX, startY;
+        let currentTool = 'brush';
+
+        const getCoordinates = (e) => {
+            let clientX, clientY;
+            if (e.touches && e.touches.length > 0) {
+                // Touch event
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            } else {
+                // Mouse event
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        };
+
+        canvas.addEventListener("mousedown", e => {
+            const coordinates = getCoordinates(e);
+            difX = coordinates.x;
+            difY = coordinates.y;
+            startX = difX;
+            startY = difY;
+            paint = true;
+            color = document.getElementById('color').value;
+            lineWidth = document.getElementById('linewidth').value;
+            ctx.beginPath();
+        });
+
+        canvas.addEventListener("touchstart", e => {
+            e.preventDefault(); // Prevent scrolling on touch devices
+            const coordinates = getCoordinates(e);
+            difX = coordinates.x;
+            difY = coordinates.y;
+            startX = difX;
+            startY = difY;
+            paint = true;
+            color = document.getElementById('color').value;
+            lineWidth = document.getElementById('linewidth').value;
+            ctx.beginPath();
+        });
+
+        canvas.addEventListener("mousemove", e => {
+            if (paint) {
+                const coordinates = getCoordinates(e);
+                switch (currentTool) {
+                    case 'brush':
+                        draw(difX, difY, coordinates.x, coordinates.y);
+                        break;
+                    case 'rectangle':
+                        drawRectangle(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                    case 'line':
+                        drawLine(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                    case 'circle':
+                        drawCircle(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                }
+                difX = coordinates.x;
+                difY = coordinates.y;
+            }
+        });
+
+        canvas.addEventListener("touchmove", e => {
+            e.preventDefault(); // Prevent scrolling on touch devices
+            if (paint) {
+                const coordinates = getCoordinates(e);
+                switch (currentTool) {
+                    case 'brush':
+                        draw(difX, difY, coordinates.x, coordinates.y);
+                        break;
+                    case 'rectangle':
+                        drawRectangle(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                    case 'line':
+                        drawLine(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                    case 'circle':
+                        drawCircle(startX, startY, coordinates.x, coordinates.y);
+                        break;
+                }
+                difX = coordinates.x;
+                difY = coordinates.y;
+            }
+        });
+
+        canvas.addEventListener("mouseup", () => {
+            if (paint) {
+                paint = false;
+                ctx.closePath();
+            }
+        });
+
+        canvas.addEventListener("touchend", () => {
+            if (paint) {
+                paint = false;
+                ctx.closePath();
+            }
+        });
+
+        const draw = (x1, y1, x2, y2) => {
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+        };
+
+        const drawRectangle = (x1, y1, x2, y2) => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
+            ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+        };
+
+        const drawLine = (x1, y1, x2, y2) => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+        };
+
+        const drawCircle = (x1, y1, x2, y2) => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
+            const radius = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+            ctx.beginPath();
+            ctx.arc(x1, y1, radius, 0, 2 * Math.PI);
+            ctx.stroke();
+        };
+
+        const brushButton = document.getElementById('brush');
+        const rectangleButton = document.getElementById('rectangle');
+        const lineButton = document.getElementById('line');
+        const circleButton = document.getElementById('circle');
+        const clearButton = document.getElementById('clear');
+
+        brushButton.addEventListener('click', () => {
+            currentTool = 'brush';
+        });
+
+        rectangleButton.addEventListener('click', () => {
+            currentTool = 'rectangle';
+        });
+
+        lineButton.addEventListener('click', () => {
+            currentTool = 'line';
+        });
+
+        circleButton.addEventListener('click', () => {
+            currentTool = 'circle';
+        });
+
+        clearButton.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        const saveButton = document.getElementById('save-button');
+        saveButton.addEventListener('click', () => {
+            const dataURL = canvas.toDataURL('image/jpeg', 1.0);
+            const link = document.createElement('a');
+            link.download = 'canvas.jpeg';
+            link.href = dataURL;
+            link.click();
+        });
+    </script>
+</body>
+</html>

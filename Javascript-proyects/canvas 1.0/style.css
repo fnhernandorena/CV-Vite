@@ -1,0 +1,28 @@
+body{
+  display: flex;
+  align-items: center;
+  background-color: #aaa;
+  flex-direction: column;
+}
+#canvas {
+    border: 2px solid #48e;
+    border-radius: 5px;
+    background-color: #000000;
+}
+.d11{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+#save-button{
+  border-radius: 10px;
+  color: white;
+  background-color: #48e;
+  width: 30%;
+  border:none;
+}
+#linewidth{
+  width: 40%;
+}

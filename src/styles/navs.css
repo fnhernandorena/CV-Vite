@@ -1,0 +1,106 @@
+.activo{
+  text-decoration: none;
+}
+.nav-button{
+  text-decoration: none;
+}
+
+#button-open{
+  visibility: hidden;
+  background-color: rgba(114, 255, 255, 0.6);
+    position: fixed;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-close{
+  visibility: hidden;
+  position: fixed;
+  border: none;
+  background-color: rgba(114, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#float-nav{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  #button-open { visibility: visible;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 25px;
+    border-radius: 35px;
+  }
+  #naveg {
+    visibility: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 248, 236, 0.8);
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  #btn-close {
+   
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    right: 25px;
+    bottom: 260px;
+  }
+  .boton {
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .activo div {
+    color: rgb(255, 116, 116);
+  }
+}
+
+@media screen and (min-width: 601px) {
+
+  #naveg { 
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    text-decoration: none;
+  }
+
+  div .boton {
+    width: 250px;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgb(114, 255, 255);
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .boton:hover {
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .activo div {
+    background-color: rgb(132, 255, 214);
+  }
+
+}

@@ -14,10 +14,10 @@ import Cont from '../../pages/contact/ita-cont';
 import '../../styles/fathers.css'
 
 
-const Ita = () => {
+const Ita = ({ onLogout }) => {
   return (
     <div className="father">
-      <Header />
+      <Header onLogout={onLogout} />
       <BrowserRouter>
         <Nav />
         <Routes>

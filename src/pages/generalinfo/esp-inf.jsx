@@ -7,7 +7,7 @@ const Info = () => {
         <li>
           <h3>Sobre mi</h3>
           <div className="sobremi">
-            <img className="yop" src="../src/assets/yo1.jpg" alt="una foto de mi cara" />
+            <img className="yop" src="../assets/img/yo1.jpg" alt="una foto de mi cara" />
             <p>
               Nací el 14 de febrero de 2004 en la ciudad de San Pedro, ciudad en
               la que vivo. Durante la semana trabajo, entreno, estudio y trato

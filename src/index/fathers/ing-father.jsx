@@ -14,10 +14,10 @@ import Cont from '../../pages/contact/ing-cont';
 import '../../styles/fathers.css'
 
 
-const Ing = () => {
+const Ing = ({ onLogout }) => {
   return (
     <div className="father">
-      <Header />
+      <Header onLogout={onLogout} />
       <BrowserRouter>
         <Nav />
         <Routes>

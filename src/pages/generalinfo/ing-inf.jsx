@@ -7,7 +7,7 @@ const Info = () => {
         <li>
           <h3>About me</h3>
           <div className="sobremi">
-            <img className="yop" src="../src/assets/yo1.jpg" alt="a pick of my face" />
+            <img className="yop" src="../assets/img/yo1.jpg" alt="a pick of my face" />
             <p>
               I was born on February 14,2004 in the city of San Pedro, the city
               where i live. During the week i work, train, study and try to

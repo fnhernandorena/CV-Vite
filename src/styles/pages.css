@@ -53,6 +53,9 @@ main{
         padding-right: 20px;
         padding-bottom: 100px;
       }
+      #cont-main{
+        padding-bottom: 230px;
+      }
 }
 
   /*estilo pc*/

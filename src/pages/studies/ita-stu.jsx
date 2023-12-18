@@ -15,11 +15,11 @@ const Est = () => {
             <b>Certificati allegati:</b>{" "}
           </p>
           <img
-            src="../src/assets/titulo_ind.jpg"
+            src="../assets/img/titulo_ind.jpg"
             alt="titulo educacion Secundaria"
           />
           <img
-            src="../src/assets/tit_tecqui.jpg"
+            src="../assets/img/tit_tecqui.jpg"
             alt="certificacion de tecnico quimico"
           />
         </li>
@@ -137,7 +137,7 @@ const Est = () => {
             <b>Certificato allegato:</b>
           </p>
           <img
-            src="../src/assets/certdes.png"
+            src="../assets/img/certdes.png"
             alt="certifidado de desarrollo web Front-End"
           />
         </li>
@@ -152,7 +152,7 @@ const Est = () => {
             <b>Certificato allegato:</b>
           </p>
           <img
-            src="../src/assets/cretdis.png"
+            src="../assets/img/cretdis.png"
             alt="certificado de diseño grafico"
           />
         </li>
@@ -172,11 +172,11 @@ const Est = () => {
                 <b>Certificati allegati:</b>
               </p>
               <img
-                src="../src/assets/certing.jpg"
+                src="../assets/img/certing.jpg"
                 alt="certificado de 3er grado de ingles"
               />
               <img
-                src="../src/assets/certing2.jpg"
+                src="../assets/img/certing2.jpg"
                 alt="certifidaco de 1er año de ingles"
               />
             </li>

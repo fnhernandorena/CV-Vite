@@ -14,10 +14,10 @@ import Cont from '../../pages/contact/esp-cont';
 import '../../styles/fathers.css'
 
 
-const Esp = () => {
+const Esp = ({ onLogout }) => {
   return (
     <div className="father">
-      <Header />
+      <Header onLogout={onLogout} />
       <BrowserRouter>
         <Nav />
         <Routes>

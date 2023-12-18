@@ -2,7 +2,7 @@ import "../../styles/pages.css";
 
 const Cont = () => {
   return (
-    <main className="cont-main">
+    <main id="cont-main">
       <ul className="text">
         <li>
           <h3>Contacto rapido</h3>

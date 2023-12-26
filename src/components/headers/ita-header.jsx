@@ -11,8 +11,8 @@ const Header = ({ onLogout }) => {
             <i className="fa-solid fa-code"></i>
           </b>
         </h1>
-        <button class="btn btn-primary" onClick={onLogout}>
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <button className="btn btn-primary btn-ex" onClick={onLogout}>
+          <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </button>
       </div>
     </header>

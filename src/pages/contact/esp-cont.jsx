@@ -3,38 +3,38 @@ import "../../styles/pages.css";
 const Cont = () => {
   return (
     <main id="cont-main">
-      <ul className="text">
+      <ul className="text container">
         <li>
-          <h3>Contacto rapido</h3>
+          <h3 className="cont-tit">Contacto rapido</h3>
           <ul>
             <li className="cont">
-              <i className="fa-solid fa-envelope"></i> Email: <br />
-              <a href="mailto:fnhernandorena@gmail.com" className="item">
+             <div> <i className="fa-solid fa-envelope"></i> Email:</div> 
+              <a href="mailto:fnhernandorena@gmail.com" className="item cont-item">
                 fnhernandorena@gmail.com
               </a>
             </li>
             <li className="cont">
-              <i className="fa-brands fa-linkedin"></i> LinkedIn: <br />
+            <div>  <i className="fa-brands fa-linkedin"></i> LinkedIn: </div>
               <a
                 href="https://www.linkedin.com/in/francisco-nicolas-hernandorena-21b2a9294/"
-                className="item"
+                className="item cont-item"
               >
                 Francisco Nicolas Hernandorena
               </a>
             </li>
             <li className="cont">
-              <i className="fa-brands fa-instagram"></i> Instagram: <br />
+            <div>  <i className="fa-brands fa-instagram"></i> Instagram: </div>
               <a
                 href="https://www.instagram.com/nico_hernandorenaa/"
-                className="item"
+                className="item cont-item"
               >
                 Nico_hernandorenaa
               </a>
             </li>
 
             <li className="cont">
-              <i className="fa-brands fa-telegram"></i> Telegram: <br />
-              <a href="https://t.me/Nico_Hernandorena" className="item">
+             <div> <i className="fa-brands fa-telegram"></i> Telegram: </div>
+              <a href="https://t.me/Nico_Hernandorena" className="item cont-item">
                 Nico_Hernandorena
               </a>
             </li>

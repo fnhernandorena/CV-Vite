@@ -1,7 +1,7 @@
 header {
   width:100%;
     padding: 50px;
-    background-color: rgb(94, 194, 161);
+    background-color: #d49d8c;
     display: flex;
     justify-content: center;
   }
@@ -11,8 +11,18 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  button{
+  .btn-ex{
+    background-color: #1c2c4c;
+    border-color: #1c2c4c;
     width: 50px;
     height: 50px;
+    color: white;
+    transition: linear  0.3s all;
   }
+  .btn-ex:hover{
+    background-color: #7c6494;
+    border-color: #7c6494;
+    transform: scale(1.3);
+}
+  
   

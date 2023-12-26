@@ -5,12 +5,15 @@ const ScrollChange = ({setMyId}) => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const windowWidth = window.innerWidth;
+      const nav = document.getElementById("float-nav")
 
       if (windowWidth > 600) {
         if (scrollY > 200) {
-          setMyId('float-nav');
+          nav.style.visibility = "visible";
+          nav.style.opacity = 1;
         } else {
-          setMyId('naveg');
+          nav.style.visibility = "hidden";
+          nav.style.opacity = 0;
 
         }
       };

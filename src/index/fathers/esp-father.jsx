@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "../../components/headers/esp-header";
 import Nav from '../../components/navs/esp-nav';
@@ -16,20 +16,21 @@ import '../../styles/fathers.css'
 
 const Esp = ({ onLogout }) => {
   return (
-    <div className="father">
-      <Header onLogout={onLogout} />
-      <BrowserRouter>
-        <Nav />
+    <Router basename="/">
+      <div className="father">
+        <Header onLogout={onLogout} />
+        <Nav navId="naveg" />
+        <Nav navId="float-nav" />
         <Routes>
           <Route path="/" element={<Info />} />
           <Route path="/formacionAcademica" element={<Est />} />
           <Route path="/experienciaLaboral" element={<Work />} />
           <Route path="/contacto" element={<Cont />} />
         </Routes>
-      </BrowserRouter>
-      <Buttons />
-      <Footer />
-    </div>
+        <Buttons />
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

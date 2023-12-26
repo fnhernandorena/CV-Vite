@@ -1,75 +1,106 @@
-main{
-   max-width: 960px;
-    line-height: 30px;
+main {
+  max-width: 960px;
+  line-height: 30px;
+  flex: 1;
 }
-.cont-main{flex: 1;
+.allContent {
+  width: 960px;
 }
-.allContent{
-    width: 960px;
+.text {
+  color: #d49d8c;
 }
-.text{
-    color: rgb(255, 90, 90);
+.container {
+  height: 600px;
 }
-.text p{
-  color: black;
+.text p {
+  color: rgb(255, 255, 255);
   font-size: large;
 }
 .work-exp {
-    color: black;
-    font-size: large;
-  }
-  h3 {
-    color:rgb(255, 90, 90) ;
-    text-decoration: underline double rgb(255, 90, 90) 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .cont{
-    font-size: x-large;
-    color: black;
-    margin-top: 25px;
-  }
-  .item{
-    text-decoration: none;
-    color: rgb(255, 90, 90);
-  }
-  .tit{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-  }
-
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+h3 {
+  color: #d49d8c;
+  text-decoration: underline double #d49d8c 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cont {
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.item {
+  text-decoration: none;
+  text-align: center;
+  color: #d49d8c;
+  padding: 10px;
+}
+.cont-item{
+  
+  border-radius: 20px;
+  margin: 25px;
+  margin-right: 0;
+  background-color: #1c2c4c;
+  transition: linear 0.3s all;
+}
+.tit {
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+#cont-main {
+  width: 100%;
+  flex: 1;
+}
+main {
+  padding-bottom: 100px;
+}
 
 /*estilo celular*/
 @media screen and (max-width: 600px) {
-    .yop{
-        border-radius:180px 180px 40px 40px;
-      }
-      img{width: 100%;
-        border-radius: 20px;
-        margin-top: 10px;
-      }
-      main{
-        padding-right: 20px;
-        padding-bottom: 100px;
-      }
-      #cont-main{
-        padding-bottom: 230px;
-      }
+  .yop {
+    border-radius: 180px 180px 40px 40px;
+  }
+  img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  main{
+    padding-right: 20px;
+  }
+  .cont-tit{
+    padding-left: 20px;
+  }
 }
 
-  /*estilo pc*/
-@media screen and (min-width: 601px){ 
-  .yop{
+/*estilo pc*/
+@media screen and (min-width: 601px) {
+
+  
+.cont-item:hover {
+  transform: scale(1.3);
+  
+  background-color: #7c6494;
+}
+  .yop {
     width: 250px;
-    border-radius:180px 180px 40px 40px;
+    border-radius: 180px 180px 40px 40px;
     margin: 10px;
+    transition: linear 0.3s all;
   }
-  .sobremi{
+  .yop:hover {
+    transform: scale(1.5);
+  }
+  .sobremi {
     display: flex;
     align-items: center;
   }
-  img{
+  img {
     width: 800px;
     margin: 10px;
     border-radius: 20px;

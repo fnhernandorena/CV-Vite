@@ -19,7 +19,8 @@ const Ita = ({ onLogout }) => {
     <div className="father">
       <Header onLogout={onLogout} />
       <BrowserRouter>
-        <Nav />
+        <Nav navId="naveg" />
+        <Nav navId="float-nav" />
         <Routes>
           <Route path="/" element={<Info />} />
           <Route path="/formacionAcademica" element={<Est />} />

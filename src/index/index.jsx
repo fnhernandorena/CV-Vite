@@ -3,7 +3,7 @@ import "../styles/index.css";
 
 const Index = ({ onLangChange }) => {
   return (
-    <main>
+    <main id="index-main">
       <div className="container inicio">
         <b>
           <h1 className="tit-inicio">

@@ -13,12 +13,18 @@ const Buttons = () => {
       naveg.style.visibility = "visible";
       btnClose.style.visibility = "visible";
       boton.style.visibility = "hidden";
+      naveg.style.opacity = 1;
+      btnClose.style.opacity = 1;
+      boton.style.opacity = 0;
     };
 
     const handleClickClose = () => {
       naveg.style.visibility = "hidden";
       btnClose.style.visibility = "hidden";
       boton.style.visibility = "visible";
+      naveg.style.opacity = 0;
+      btnClose.style.opacity = 0;
+      boton.style.opacity = 1;
     };
 
     boton.addEventListener("click", handleClickOpen);

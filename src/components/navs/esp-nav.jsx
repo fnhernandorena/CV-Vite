@@ -1,13 +1,11 @@
 import "../../styles/navs.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import ScrollChange from "./nav-scroll";
 
-const Nav = (props) => {
-  const [myId, setMyId] = useState("naveg");
+const Nav = ({navId}) => {
 
   return (
-    <nav id={myId}>
+    <nav id={navId}>
       <NavLink
         to="/"
         className={({ isActive }) => (isActive ? "activo" : "nav-button")}
@@ -44,7 +42,7 @@ const Nav = (props) => {
           Contacto <i className="fa-solid fa-compass"></i>
         </div>
       </NavLink>
-      {<ScrollChange setMyId={setMyId} />}
+      {<ScrollChange />}
     </nav>
   );
 };

@@ -39,11 +39,13 @@ const Est = () => {
           </b>{" "}
           <br />
           <a href="https://github.com/fnhernandorena/CV" className="item">
-            <i className="fa-solid fa-paperclip"></i> Old curriculum website repository
+            <i className="fa-solid fa-paperclip"></i> Old curriculum website
+            repository
           </a>{" "}
           <br />
           <a href="https://github.com/fnhernandorena/CV" className="item">
-            <i className="fa-solid fa-paperclip"></i> Curriculum website repository whit Vite.js
+            <i className="fa-solid fa-paperclip"></i> Curriculum website
+            repository whit Vite.js
           </a>{" "}
           <br />
           <ul>
@@ -71,15 +73,15 @@ const Est = () => {
                 href="../Javascript-proyects/canvas 1.0/canvas1.0.html"
                 className="item"
               >
-                <i className="fa-solid fa-paintbrush"></i> Web paint whit canvas!
-                (only compatible with computers)
+                <i className="fa-solid fa-paintbrush"></i> Web paint whit
+                canvas! (only compatible with computers)
               </a>
             </li>
             <li>
               <h3>React Native</h3>
               <p>
                 After learning JavaScript, I dedicated my entire time to
-                learning how to work with React Native and especially the "expo"
+                learning how to work with React Native and especially the `expo`
                 framework. <br />
                 Approximately 100 hours of study and project development
               </p>
@@ -102,6 +104,46 @@ const Est = () => {
                 <i className="fa-solid fa-calculator"></i> Dividir Cuenta (APK
                 Android)
               </a>
+            </li>{" "}
+            <li>
+              <h3>Typescript</h3>
+              <p>200 hours of study developing and learning Angular, Next.js and Tailwind.<br />
+              I am also currently developing a new portfolio with next.js that will include a Facebook-style feed where I can comment on interesting things daily.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Typescript projects:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/angular-project"
+                className="item"
+              >
+                <i className="fa-brands fa-angular"></i> Angular app
+              </a>
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/nextjs-dashboard"
+                className="item"
+              >
+                <i className="fa-solid fa-globe"></i> Next Dasboard
+              </a>
+            </li>
+            <li>
+              <h3>Python</h3>
+              <p>100 hours of study developing and learning, carry out projects such as a website that shortens links and generates QR codes with it, an image compressor, a YouTube video downloader and others.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Python projects:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/python"
+                className="item"
+              >
+                <i className="fa-brands fa-python"></i> Python projects
+              </a>
+            </li>
+            <li>
+              <h3>C# and .net</h3>
+              <p>In this moment im learning C# and .net</p>
             </li>
           </ul>
         </li>
@@ -120,16 +162,16 @@ const Est = () => {
               href="https://github.com/fnhernandorena/archivos-diplo-dw"
               className="item"
             >
-              <i className="fa-solid fa-paperclip"></i> Front-End web development
-              diploma tasks repository
+              <i className="fa-solid fa-paperclip"></i> Front-End web
+              development diploma tasks repository
             </a>{" "}
             <br />
             <a
               href="https://github.com/fnhernandorena/trabajo-final-desarrollo-web"
               className="item"
             >
-              <i className="fa-solid fa-paperclip"></i> Final work repository for
-              Front-End web development diploma
+              <i className="fa-solid fa-paperclip"></i> Final work repository
+              for Front-End web development diploma
             </a>{" "}
             <br />
             <b>Attached certificate:</b>
@@ -161,7 +203,7 @@ const Est = () => {
             <li>
               <h4>English</h4>
               <p>
-                I studied English for 5 years at the "De Analia" Institute.{" "}
+                I studied English for 5 years at the `De Analia` Institute.{" "}
                 <br />
                 I currently have a very good command of the language, although I
                 normally do not use it on a day-to-day basis.

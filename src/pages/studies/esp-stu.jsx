@@ -80,7 +80,7 @@ const Est = () => {
               <p>
                 Luego de aprender JavaScript dedique la totalidad de mi a
                 aprender a trabajar React Native y en especial el framework
-                "expo". <br />
+                `expo`. <br />
                 Aproximadamente 100 horas de estudio y desarrollo de proyectos
               </p>
               <b className="tit">
@@ -102,6 +102,46 @@ const Est = () => {
                 <i className="fa-solid fa-calculator"></i> Dividir Cuenta (APK
                 Android)
               </a>
+            </li>
+            <li>
+              <h3>Typescript</h3>
+              <p>200 horas de estudio desarrollando y aprendiendo Angular, Next.js y Tailwind.<br />
+              Ademas actualmente estoy desarrollando un nuevo portafolio con next.js que incluira un feed al estilo de `facebook` donde podre ir comentando cosas interesantes a diario.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Proyectos Typescript:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/angular-project"
+                className="item"
+              >
+                <i className="fa-brands fa-angular"></i> Angular app
+              </a>
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/nextjs-dashboard"
+                className="item"
+              >
+                <i className="fa-solid fa-globe"></i> Next Dasboard
+              </a>
+            </li>
+            <li>
+              <h3>Python</h3>
+              <p>100 horas de estudio desarrollando y aprendiendo, realice proyectos como una pagina web que acorta enlaces y genera codigos QR con este, un comprimidor de imagenes, un descargador de videos de youtube y demas.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Proyectos Python:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/python"
+                className="item"
+              >
+                <i className="fa-brands fa-python"></i> Python projects
+              </a>
+            </li>
+            <li>
+              <h3>C# and .net</h3>
+              <p>En este momento estoy aprendiendo C# y .net</p>
             </li>
           </ul>
         </li>
@@ -162,7 +202,7 @@ const Est = () => {
             <li>
               <h4>Inglés</h4>
               <p>
-                Estudié durante 5 años inglés en el Instituto "De Analia".{" "}
+                Estudié durante 5 años inglés en el Instituto `De Analia`.{" "}
                 <br />
                 En actualidad presento un muy buen manejo del idioma, aunque
                 normalmente en el día a día no lo utilizo.

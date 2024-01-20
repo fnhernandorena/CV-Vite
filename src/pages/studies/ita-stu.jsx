@@ -7,7 +7,7 @@ const Est = () => {
         <li>
           <h3>Studi secondari</h3>
           <p>
-            Nel 2022 mi sono diplomato come Perito Chimico presso l'Istituto
+            Nel 2022 mi sono diplomato come Perito Chimico presso l`Istituto
             Tecnico Superiore N°1. <br />
             Sono stati 7 anni di studio su doppi o tripli turni abbinati a
             laboratorio dal primo al terzo anno e dal quarto al settimo anno
@@ -28,7 +28,7 @@ const Est = () => {
           <h3>Programmazione</h3>
           <p>
             Per tutto il 2023 ho seguito il corso di sviluppo web front-end
-            presso l'UTN. Capisco e utilizzo perfettamente HTML e CSS. <br />
+            presso l`UTN. Capisco e utilizzo perfettamente HTML e CSS. <br />
             Inoltre, terminato il corso mi sono dedicato completamente a
             JavaScript, generando conoscenze sempre più avanzate <br />{" "}
           </p>
@@ -80,7 +80,7 @@ const Est = () => {
               <p>
                 Dopo aver imparato JavaScript, ho dedicato tutto il mio tempo a
                 imparare a lavorare con React Native e in particolare con il
-                framework "expo". <br />
+                framework `expo`. <br />
                 Circa 100 ore di studio e sviluppo di progetti
               </p>
               <b className="tit">
@@ -103,12 +103,52 @@ const Est = () => {
                 Android)
               </a>
             </li>
+            <li>
+              <h3>Typescript</h3>
+              <p>200 ore di studio sviluppando e imparando Angular, Next.js e Tailwind.<br />
+              Attualmente sto anche sviluppando un nuovo portfolio con next.js che includerà un feed in stile Facebook in cui posso commentare quotidianamente cose interessanti.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Progetti Typescript:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/angular-project"
+                className="item"
+              >
+                <i className="fa-brands fa-angular"></i> Angular app
+              </a>
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/nextjs-dashboard"
+                className="item"
+              >
+                <i className="fa-solid fa-globe"></i> Next Dasboard
+              </a>
+            </li>
+            <li>
+              <h3>Python</h3>
+              <p>100 ore di studio, sviluppo e apprendimento, realizzazione di progetti come un sito Web che accorcia i collegamenti e genera codici QR con esso, un compressore di immagini, un downloader di video di YouTube e altro ancora.</p>
+              <b className="tit">
+              <i className="fa-solid fa-keyboard"></i> Progetti Python:
+              </b>{" "}
+              <br />
+              <a
+                href="https://github.com/fnhernandorena/python"
+                className="item"
+              >
+                <i className="fa-brands fa-python"></i> Python projects
+              </a>
+            </li>
+            <li>
+              <h3>C# and .net</h3>
+              <p>In questo momento sto imparando C# e .net</p>
+            </li>
           </ul>
         </li>
         <li>
-          <h3>Desarrollo web Front-End</h3>
+          <h3>Sviluppo web Front-End</h3>
           <p>
-            Presso l'UTN di Buenos Aires ho conseguito un diploma in sviluppo
+            Presso l`UTN di Buenos Aires ho conseguito un diploma in sviluppo
             web full stack con react JS con un carico di lavoro di 187 ore.{" "}
             <br />
             Si è concluso con la creazione di una pagina web front-end
@@ -144,9 +184,9 @@ const Est = () => {
         <li>
           <h3>Progettazione grafica</h3>
           <p>
-            Ho seguito il corso base di progettazione grafica presso l'UTN di
+            Ho seguito il corso base di progettazione grafica presso l`UTN di
             Buenos Aires con un carico di lezioni di 87 ore, basato
-            sull'utilizzo completo degli strumenti Adobe Photoshop e Adobe
+            sull`utilizzo completo degli strumenti Adobe Photoshop e Adobe
             Illustrator.
             <br />
             <b>Certificato allegato:</b>
@@ -164,9 +204,9 @@ const Est = () => {
             <li>
               <h4>Inglese</h4>
               <p>
-                Ho studiato inglese per 5 anni presso l'Istituto "De Analia".{" "}
+                Ho studiato inglese per 5 anni presso l`Istituto `De Analia``.{" "}
                 <br />
-                Al momento ho un'ottima padronanza della lingua, anche se
+                Al momento ho un`ottima padronanza della lingua, anche se
                 normalmente non la uso quotidianamente.
                 <br />
                 <b>Certificati allegati:</b>
@@ -183,7 +223,7 @@ const Est = () => {
             <li>
               <h4>Italiano</h4>
               <p>
-                All'inizio del 2023 ho iniziato a studiare italiano, presso la
+                All`inizio del 2023 ho iniziato a studiare italiano, presso la
                 Società Italiana della mia città. Oggi continuo con il corso e
                 faccio progressi nel mio apprendimento.
               </p>

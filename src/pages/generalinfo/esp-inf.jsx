@@ -1,6 +1,6 @@
 import "../../styles/pages.css";
 
-const Info = () => {
+const Page = () => {
   return (
     <main>
       <ul className="text">
@@ -36,4 +36,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Page;

@@ -1,10 +1,10 @@
 body{
-   flex: 1;
-   background-image: url('./img/bg.jpeg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-color: black;
+    flex: 1;
+    background-image: url('./img/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 #root{
 display: flex;
